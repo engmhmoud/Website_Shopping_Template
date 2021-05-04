@@ -74,9 +74,78 @@ header .header-content nav ul {
     color: var(--subColor);
 }
 
-header .header-content nav ul li a {
+header .header-content nav ul li .link {
+    position: relative;
     display: block;
-    padding: 15px 25px;
+    padding: 10px 25px;
+    font-weight: bold;
+}
+
+header .header-content nav ul li .link::before {
+    content: '';
+    position: absolute;
+    border-width: 0 2px;
+    height: 100%;
+    width: 98%;
+    ;
+    border-color: var(--mainColor);
+    border-style: solid;
+    top: 0;
+    left: 0;
+    transform: scale3d(1, 0, 1);
+    transition: transform .5s;
+}
+
+header .header-content nav ul li .link:hover:before {
+    transform: scale3d(1, 1, 1);
+}
+
+header .header-content nav ul li .link::after {
+    content: '';
+    position: absolute;
+    border-width: 2px 0;
+    height: 91%;
+    width: 100%;
+    ;
+    border-color: var(--mainColor);
+    border-style: solid;
+    top: 0;
+    left: 0;
+    transform: scale3d(0, 1, 1);
+    transition: transform .5s;
+}
+
+header .header-content nav ul li .link:hover:after {
+    transform: scale3d(1, 1, 1);
+}
+
+header .header-content .login li:last-child i {
+    position: relative;
+}
+
+header .header-content .login li:last-child i::after {
+    position: absolute;
+    margin-right: 20px;
+    content: "0";
+    font-size: 13px;
+    color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    bottom: 0;
+    left: 0px;
+    padding: 4px;
+    background: var(--mainColor);
 }
 
 /* end header */
+
+/* start slider */
+
+.slider {}
+
+.slider img {
+    width: 100%;
+}
+
+/* end slider */
