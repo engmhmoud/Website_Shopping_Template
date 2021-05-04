@@ -1,0 +1,82 @@
+/* base style */
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+:root {
+    --mainColor: #765244;
+    --subColor: #333;
+}
+
+/* general purpose styles */
+
+.list-unstyled {
+    list-style: none;
+}
+
+/* general Items */
+
+/* start header */
+
+header {
+    padding-top: 20px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content img {
+    flex: 1;
+    max-width: 170px;
+}
+
+.header-content nav {
+    flex: 3;
+}
+
+.header-content .login {
+    flex: 1;
+    text-align: right;
+    padding: 10px;
+}
+
+header .header-content nav ul {
+    text-align: center;
+}
+
+.header-content ul li {
+    display: inline-block;
+}
+
+.header-content ul li, .header-content ul li, a {
+    color: var(--subColor);
+}
+
+header .header-content nav ul li a {
+    display: block;
+    padding: 15px 25px;
+}
+
+/* end header */
